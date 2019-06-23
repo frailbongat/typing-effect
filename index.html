@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Typing Effect</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+
+<body style="background-color: pink;">
+    <div class="container text-center mt-5 display-2">
+    	<p>What your</p>
+        <div id="typed-strings">
+            <p>smile</p>
+            <p>breath</p>
+            <p>mouth</p>
+            <p>routine</p>
+        </div>
+        <span id="typed"></span>
+        <span>needs</span>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="typed.js"></script>
+    <script>
+    var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        backSpeed: 100,
+        typeSpeed: 100
+    });
+    </script>
+</body>
+
+</html>
